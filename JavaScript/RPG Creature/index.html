@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Creature Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RPG Creature Search</h1>
+            <p>Search for creatures by name or ID</p>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Enter creature name or ID..." required>
+            <button id="search-button">Search</button>
+        </div>
+        
+        <div class="creature-display" id="creature-display">
+            <div class="creature-info">
+                <div class="creature-header">
+                    <h2 id="creature-name"></h2>
+                    <span id="creature-id" class="creature-id"></span>
+                </div>
+                
+                <div class="creature-image-container">
+                    <img id="creature-sprite" alt="Creature sprite" style="display: none;">
+                </div>
+                
+                <div class="creature-details">
+                    <div class="detail-row">
+                        <div class="detail-item">
+                            <strong>Weight:</strong>
+                            <span id="weight"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Height:</strong>
+                            <span id="height"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="types-container">
+                        <strong>Types:</strong>
+                        <div id="types" class="types"></div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <h3>Base Stats</h3>
+                        <div class="stat-item">
+                            <span class="stat-label">HP</span>
+                            <span id="hp" class="stat-value"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Attack</span>
+                            <span id="attack" class="stat-value"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Defense</span>
+                            <span id="defense" class="stat-value"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Special Attack</span>
+                            <span id="special-attack" class="stat-value"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Special Defense</span>
+                            <span id="special-defense" class="stat-value"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Speed</span>
+                            <span id="speed" class="stat-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
